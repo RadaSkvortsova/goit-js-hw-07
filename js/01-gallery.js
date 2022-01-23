@@ -25,8 +25,3 @@ galleryListMarkup.addEventListener('click', event => {
     const imgOriginal = event.target.getAttribute('data-source');
     basicLightbox.create(`<img src='${imgOriginal}' width='1280' >`).show();
 });
-
-let gallery = new SimpleLightbox('.gallery a');
-gallery.on('show.simplelightbox', function () {
-    // do something…
-});
